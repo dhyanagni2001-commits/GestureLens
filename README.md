@@ -4,7 +4,7 @@ Real-time hand gesture recognition that runs entirely in the browser — no back
 
 A MobileNetV2 classifier is fine-tuned on the HaGRID dataset, quantized to TFLite for efficiency, and converted to TensorFlow.js so inference happens live off webcam frames in a standard browser tab.
 
-> **Note:** Fill in the `[TODO]` markers below with your actual numbers (accuracy, latency, repo URL, license, etc.) before publishing — placeholders are left intentionally rather than invented.
+
 
 ---
 
@@ -58,8 +58,7 @@ flowchart TD
 
 ```
 gesturelens/
-├── README.md
-├── LICENSE                          # [TODO: choose a license]
+├── README.md                      
 │
 ├── training/
 │   ├── notebooks/
@@ -133,7 +132,7 @@ gesturelens/
 ```bash
 cd training
 pip install -r requirements.txt
-python train.py --epochs [TODO] --batch-size [TODO]
+python train.py
 ```
 
 ### 2. Convert for deployment
@@ -169,13 +168,7 @@ Open the local dev URL, grant webcam permission, and hold up a gesture.
 - [ ] Package as a browser extension or embeddable widget
 - [ ] Add ONNX export path for cross-framework portability
 
----
 
-## Acknowledgments
 
-- [HaGRID dataset](https://github.com/hukenovs/hagrid) authors
-- TensorFlow / TensorFlow.js and TFLite teams
 
-## License
 
-`[TODO: add license, e.g. MIT]`
