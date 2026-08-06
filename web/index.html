@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GestureLens — Live Hand Gesture Recognition</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>GestureLens</h1>
+      <p>Real-time hand gesture recognition, entirely in your browser. Nothing leaves your device.</p>
+    </header>
+
+    <section class="app__stage">
+      <div class="video-wrap">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn">Start Camera</button>
+        <button id="stop-btn" disabled>Stop</button>
+        <div id="status" class="status">Model not loaded</div>
+      </div>
+
+      <div id="prediction" class="prediction">
+        <span id="pred-label">—</span>
+        <span id="pred-confidence"></span>
+      </div>
+    </section>
+
+    <footer class="app__footer">
+      <p>Model: MobileNetV2 fine-tuned on HaGRID · Quantized · Runs via TensorFlow.js</p>
+    </footer>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

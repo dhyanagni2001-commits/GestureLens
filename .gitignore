@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data
+training/data_prep/data/
+*.zip
+
+# Large model artifacts (use Git LFS or release assets instead)
+models/keras/*.h5
+models/tflite/*.tflite
+models/tfjs/*.bin
+
+# Node
+web/node_modules/
+web/dist/
+
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
